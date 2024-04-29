@@ -1,0 +1,291 @@
+body {
+  background-image: url("images/Avocado\ Background@0.1x.png");
+  background-repeat: repeat;
+
+}
+
+.white {
+    
+  background-color: white;
+  margin: 5%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
+.nav{
+padding: 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+width: 18%;
+text-align: center;
+border: 1px solid black;
+}
+
+h1 {
+  padding-top: 5%;
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+.image {
+  display: block;
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+
+
+  max-height: 25%;
+  object-fit: fill;  /* Or "contain" or "fill" */
+
+
+  
+}
+
+.ingredients,
+.instructions {
+  display: block;
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seops {
+  padding-bottom: 5%;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+
+}
+
+article {
+  display: block;
+  width: 60%;
+  background-color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.aside {
+  display: block;
+
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: auto;
+}
+
+.aside img {
+  width: 85%;
+  height: auto;
+}
+
+.aside a{
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+.tumblr {
+  padding: 20px;
+  text-align: center;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.header a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.header div:last-of-type{
+    background-color: lightgreen;
+    
+    
+    
+    }
+
+footer {
+  text-align: center;
+  padding: 3%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+
+/* Medium screens */
+@media only screen and (max-width: 800px) {
+
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+   padding-bottom: 10%;
+ 
+      
+      }
+        /* To use more real estate */
+        .ingredients,
+        .instructions {
+          display: block;
+          width: 90%;
+          height: auto;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      .nav{
+      
+       
+        width: 85%;
+     min-height: 25%;
+  
+        border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;  
+         min-height: max-content;
+       
+        }
+
+
+
+
+
+      /* Easier to read from the left  */
+    h1, h2 {
+    
+    text-align: left;
+    
+    
+    }
+
+
+}
+/* On small devices I want this stacked
+I also put the home button on the top
+*/
+
+@media only screen and (max-width: 600px) {
+    .header {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 90%;
+      height: fit-content;
+      justify-content: space-between;
+      text-align: center;
+      padding-bottom: 5%;
+    }
+  
+    .nav{
+      padding: 1%;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+      width: 85%;
+      text-align: center;
+      border: 1px solid black;
+     margin-left: auto;
+     margin-right: auto;
+     font-size:medium;
+      }
+    /* Easier to read from the left  */
+  h1, h2, h3, h4{
+  
+  text-align: left;
+
+  
+  }
+  h1 { font-size: .65cm;}
+    .page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+
+   
+    }
+
+
+    .image {
+
+padding-top: 5%;
+min-height: 45%;
+
+    }
+
+
+    /* To use more real estate */
+    .ingredients,
+    .instructions {
+      display: block;
+      width: 90%;
+      height: auto;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    article {
+      display: block;
+      width: 90%;
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .aside {
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+      height: auto;
+  
+    }
+  
+   .aside a{
+  
+  
+      text-decoration: none;
+      color: inherit;
+   }
+  
+  }
